@@ -1,0 +1,31 @@
+SANBOKS Version history
+
+Developers
+- Swapnil Mane (Captain, TR Racing 2020-21) - maneswapnil61@gmail.com - 9820685312
+- Yash Bhat (Vice Captain, TR Racing 2020-21) - yashrbhat@outlook.com - 9326019863 
+
+
+24/03/2021 -  v0  - Base version. 
+		  - Point mass vehicle model. 
+		  - g-g-v performance envelope. 
+		  - Formula Bharat Autocross Track coordinates obtained thorugh google maps and track image.
+		  - No gearbox, no differential, no tire model, no suspension model have been included. 
+		  - Load transfer hasn't been factored into the program.
+
+03/04/2021 - v0.1 - Added battery estimation in Simulink through motor supply current and voltage. 
+     		  - Fixed acceleration correction loop premature breaking error.
+
+09/04/2021 - v0.2 - Acceleration loop velocity estimation now uses delta_s_leng to calculate velocity instead of distance due to array length issues. 
+     		  - Laptime is now estimated in script using primitive data.
+		  - No. of laps feature added to script. Script graphs show single lap behavior and simulink shows behavior over no. of laps.
+
+10/04/2021 - v0.3 - Road Load equation adjusted to give proper longitudinal behavior.
+		  - Equivalent Rotational mass component added to road load equation.
+		  - Motor power consumption block now includes i^2*R losses.
+		  - Supply voltage variable added.
+		  - Added motor no-load current 7A to Excel I/P sheet.
+		  - Scopes removed in favor of observing all data on the data inspector. (26/04/2021)
+
+13/07/2021 - v0.4 - Added load transfer model. X,Y,Z dynamic loads on all four tyres is available.
+		  - Added roll calculations.
+		  - Added tyre traction limit to longitudinal acceleration calculation in road load equation.
