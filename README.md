@@ -77,10 +77,3 @@ Inspired by - Honorable Principal Dr. Sanjay Bokade.
 
 
 
-
-
-
-
-
-"FSAE is your interest, the college doesn't need it. You should give something to the college; the college owes you nothing." __ Dr. Sanjay Bokade.
-"Here you go, take this." __ Mane.			# Sanboks
